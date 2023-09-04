@@ -1,1 +1,110 @@
 /* место для вашего кода */
+/* шапка */
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 1340px;
+  height: 109px;
+
+}
+
+/* контейнер навигации nav */
+.header_menu {
+display: flex;
+}
+
+/* список навигации ul*/
+.header_links-list {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  gap: 30px;
+  list-style: circle;
+}
+
+/* пункт списка ссылок li*/
+.header_links-list-item {
+
+}
+
+/* убираем кружочки для "главная"*/
+.header__links-list-item_no-bullit {
+  text-decoration: none;
+}
+
+/* ссылка a*/
+.header_link {
+  font-size: 18px;
+}
+
+/* активная ссылка */
+.header_link_active {
+
+}
+
+/* контейнер логотипа */
+.header_logo {
+  display: block;
+  margin: auto;
+
+  width: 148px;
+  height: 105px;
+  
+}
+
+/* картинка с логотипом */
+.header_logo-image {
+  width: 100%;
+}
+
+/* контейнер с адресом */
+.address {
+
+}
+
+/* выравнивание блока с адресом */
+.header_address {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* может и не нужен */
+.main{
+
+}
+/* входная секция */
+.cover {
+
+}
+/* секция с карточками лотов */
+.lots {
+
+}
+/* секция с информацией об аукционе */
+.about {
+
+}
+/* подвал */
+.footer {
+
+}
