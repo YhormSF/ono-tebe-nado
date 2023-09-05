@@ -92,11 +92,77 @@ line-height: 130%;
 }
 
 
+/* входная секция */
+.cover {
 
+/* background-image: url(../images/cover.jpg); */
+width: 1440px;
+height: 757px;
 
+}
 
+/* полупрозраный блок поверх секции (картинка) */
+.overlay {
 
+}
 
+/* заголовок */
+.cover_title {
+  color: #fff;
+  font-size: 100px;
+  line-height: 115%;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+
+/* классы для выравнивания строк текста и превращения их в блочный элемент */
+
+.test { letter-spacing: initial; }
+
+.text-block {
+  display: block;
+}
+
+.aligned-text-left {
+padding: 165px 50px 0px 50px;
+}
+
+.aligned-text_center {
+  text-align: center;
+  padding: 12px 50px 0px 50px;
+
+}
+
+.aligned-text_right {
+  text-align: right;
+  padding: 5px 50px 20px 50px;
+  /* 20 1 > 50 */
+}
+
+ /* класс для управления межбуквенным растрояним в местах, где есть эти акценты */
+ .letter-spacing-extended {
+letter-spacing: 60px;
+ }
+
+ /* класс для обнуления общего межбуквенного расстояния для последней буквы */
+.no-letter-spacing {
+letter-spacing: 0px;
+}
+
+ /* контейнер для подзаголовка и кнопки */
+.cover__description {
+
+}
+
+ /* текст подзаголовка */
+.cover__description-text {
+
+ }
+
+ /* кнопка «Сделать ставку */
+.bet-button {
+
+ }
 
 
 
@@ -116,10 +182,8 @@ line-height: 130%;
 .main{
 
 }
-/* входная секция */
-.cover {
 
-}
+
 /* секция с карточками лотов */
 .lots {
 
