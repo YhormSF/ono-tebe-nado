@@ -9,6 +9,9 @@
   margin: 92px 49px 92px 51px;
 
 }
+/* ! не забыть поставить в отдельные блоки фронт фамили и прочее, чтобы они могли работать "отдельно" */
+/* ! + пофиксить линии в хедере */
+/* ! + плавное перемещение, ссылки, убрать скролл (если будет) и тд */
 
 /* контейнер навигации nav */
 .header_menu {
@@ -93,50 +96,67 @@ line-height: 130%;
 
 
 /* входная секция */
-.cover {
+/* может и не нужен */
+/* .main{} */
 
-/* background-image: url(../images/cover.jpg); */
+.cover {
+/* padding: 145px 50px 50px 50px; */
 width: 1440px;
 height: 757px;
-
+background-image: url(../images/cover.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+color: #fff;
+font-family: Raleway, sans-serif;
+/* opacity: 0.999;
+z-index: 1; */
 }
 
-/* полупрозраный блок поверх секции (картинка) */
+/* полупрозраный блок поверх секции  */
 .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:rgba(0, 0, 0, 0.5);
+  z-index: 0;
 
 }
 
 /* заголовок */
 .cover_title {
-  color: #fff;
+  position: relative;
+  font-weight: 700;
   font-size: 100px;
   line-height: 115%;
   text-transform: uppercase;
   letter-spacing: 30px;
+  /* !указать индекс */
 }
 
 /* классы для выравнивания строк текста и превращения их в блочный элемент */
 
-.test { letter-spacing: initial; }
+/* .test { letter-spacing: initial; } */
 
 .text-block {
   display: block;
 }
 
 .aligned-text-left {
-padding: 165px 50px 0px 50px;
+padding: 165px 50px 10px 50px;
 }
 
 .aligned-text_center {
   text-align: center;
-  padding: 12px 50px 0px 50px;
+  padding: 10px 50px 10px 50px;
+  line-height: 1;
 
 }
 
 .aligned-text_right {
   text-align: right;
-  padding: 5px 50px 20px 50px;
-  /* 20 1 > 50 */
+  padding: 10px 50px 20px 50px;
+  line-height: 1;
 }
 
  /* класс для управления межбуквенным растрояним в местах, где есть эти акценты */
@@ -150,44 +170,118 @@ letter-spacing: 0px;
 }
 
  /* контейнер для подзаголовка и кнопки */
-.cover__description {
+.cover_description {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-style: normal;
+padding: 115px 50px 50px 424px;
+/* левый отступ чуть больше (422 должно быть) из-за не точности текста по макету */
 
 }
 
  /* текст подзаголовка */
-.cover__description-text {
-
+.cover_description-text {
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 28px;
+  text-transform: uppercase;
+  z-index: 1;
+  word-spacing: 17px;
+  /*расстояние между словами */
  }
 
  /* кнопка «Сделать ставку */
 .bet-button {
-
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #FFF;
+  width: 257px;
+  height: 52px;
+  z-index: 1;
+  /* !не забыть добавить ссылку или типо того */
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* может и не нужен */
-.main{
-
-}
 
 
 /* секция с карточками лотов */
 .lots {
 
 }
+/* заголовок секции */
+.lots_heading{
+
+}
+/* список карточек */
+.lots_card-list{
+
+}
+/* пункт списка карточки */
+.lots_card-list-item {
+
+}
+/* ссылка, обрамляющая карточку */
+.card-link {
+
+}
+/*  карточка */
+.card {
+
+}
+
+
+/* классы, чтобы задать определённый фон каждой из карточек */
+.card_type_film {
+
+}
+.card_type_book {
+
+}
+.card_type_picture {
+
+}
+
+/* заголовок карточки */
+.card_title {
+
+}
+/* текст карточки */
+.card_text {
+
+}
+/* ссылка «Посмотреть больше» */
+.lots_look-more-link {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* секция с информацией об аукционе */
 .about {
 
