@@ -2,16 +2,15 @@
 /* шапка */
 .header {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  width: 1340px;
   height: 109px;
   margin: 92px 49px 92px 51px;
+  font-size: 18px;
 
 }
 /* ! не забыть поставить в отдельные блоки фронт фамили и прочее, чтобы они могли работать "отдельно" */
 /* ! + пофиксить линии в хедере */
-/* ! + плавное перемещение, ссылки, убрать скролл (если будет) и тд */
+/* ! + плавное перемещение, ссылки, убрать горизонтальный скролл (если будет) и тд */
 
 /* контейнер навигации nav */
 .header_menu {
@@ -21,15 +20,15 @@
 /* список навигации ul*/
 .header_links-list {
   display: flex;
-  /* flex-direction: row; */
-  /* align-items: center; */
-  gap: 32px;
+  gap: 33px;
   list-style: circle;
+  text-underline-offset: 4px;
+  /* фикс подчеркивания */
 }
 
 /* пункт списка ссылок li*/
 .header_links-list-item {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 /* убираем кружочки для "главная"*/
@@ -45,19 +44,13 @@
 
 /* активная ссылка */
 .header_link_active {
-
+/* !!! сюда добавить ссылку или хз */
 }
 
 /* контейнер логотипа */
 .header_logo {
-  /* display: block; */
+  display: block;
   margin: auto;
-   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  width: 148px;
-  height: 105px;
-  
 }
 
 /* картинка с логотипом */
@@ -77,21 +70,20 @@ address {
 
 /* контейнер с адресом */
 .address {
-display: flex;
-flex-direction: column;
-align-items: end;
-justify-content: center;
-font-size: 18px;
 line-height: 130%;
+text-underline-offset: 4px;
 }
 
 /* выравнивание блока с адресом */
 .header_address {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2px;
 }
 
 .address-margin-right {
-  margin-right: auto;
+  margin-right: 108px;
 }
 
 
@@ -101,7 +93,7 @@ line-height: 130%;
 
 .cover {
 /* padding: 145px 50px 50px 50px; */
-width: 1440px;
+position: relative;
 height: 757px;
 background-image: url(../images/cover.jpg);
 background-repeat: no-repeat;
@@ -109,8 +101,7 @@ background-position: center;
 background-size: cover;
 color: #fff;
 font-family: Raleway, sans-serif;
-/* opacity: 0.999;
-z-index: 1; */
+margin-bottom: 180px;
 }
 
 /* полупрозраный блок поверх секции  */
@@ -118,9 +109,8 @@ z-index: 1; */
   width: 100%;
   height: 100%;
   position: absolute;
-  background:rgba(0, 0, 0, 0.5);
+  background:rgba(0, 0, 0, 0.6);
   z-index: 0;
-
 }
 
 /* заголовок */
@@ -131,7 +121,6 @@ z-index: 1; */
   line-height: 115%;
   text-transform: uppercase;
   letter-spacing: 30px;
-  /* !указать индекс */
 }
 
 /* классы для выравнивания строк текста и превращения их в блочный элемент */
@@ -212,18 +201,37 @@ padding: 115px 50px 50px 424px;
 
 /* секция с карточками лотов */
 .lots {
-
+  font-family: Raleway, sans-serif;
+  margin: 0px 50px 0px 50px;
 }
 /* заголовок секции */
 .lots_heading{
-
+  display: block;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 40px;
 }
 /* список карточек */
 .lots_card-list{
-
+  display: block;
+  color: #FFF;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  padding-top: 27px;
+  padding-bottom: 30px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  /* text-align: left; */
 }
 /* пункт списка карточки */
 .lots_card-list-item {
+  flex-grow: 1;
+  width: 430px;
+  height: 450px;  
 
 }
 /* ссылка, обрамляющая карточку */
@@ -232,60 +240,131 @@ padding: 115px 50px 50px 424px;
 }
 /*  карточка */
 .card {
-
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
-
+/* .flex {
+  display: flex;
+} */
 
 /* классы, чтобы задать определённый фон каждой из карточек */
 .card_type_film {
-
+position: relative;
+background-image: url(../images/card-lot-01.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+width: 100%;
+height: 100%;
 }
 .card_type_book {
-
+background-image: url(../images/card-lot-02.jpg);
+position: relative;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+width: 100%;
+height: 100%;
 }
 .card_type_picture {
+background-image: url(../images/card-lot-03.jpg);
+position: relative;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+width: 100%;
+height: 100%;
 
 }
 
 /* заголовок карточки */
 .card_title {
-
+  display: block;
+  z-index: 1;
+  inset: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  line-height: 120%;
+  padding: 50px 40px 0px 40px;
+ 
 }
 /* текст карточки */
 .card_text {
-
+  z-index: 1;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0px 40px 50px 40px;
+  line-height: 120%;
 }
 /* ссылка «Посмотреть больше» */
 .lots_look-more-link {
-
+color: #000;
+font-family: Raleway, sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* секция с информацией об аукционе */
 .about {
+margin: 181px 50px 0px 50px;
+height: 487px;
+}
+
+/* класс для колонок */
+.about_column {
 
 }
+
+/* контейнер с логотипом */
+.about_logo {
+  /* display: block;
+  margin: auto; */
+}
+
+/* изображение логотипа */
+.about_logo-image {
+
+  width: 148px;
+  height: 114px;
+  /* width: 100%; */
+}
+
+/* заголовок секции */
+.about_title {
+
+}
+/* блок для текстов секции */
+.about_text {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* подвал */
 .footer {
 
