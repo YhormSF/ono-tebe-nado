@@ -11,7 +11,6 @@
 /* ! не забыть поставить в отдельные блоки фронт фамили и прочее, чтобы они могли работать "отдельно" */
 /* ! + пофиксить линии в хедере */
 /* ! + плавное перемещение, ссылки, убрать горизонтальный скролл (если будет) и тд */
-
 /* контейнер навигации nav */
 .header_menu {
 /* display: flex; */
@@ -299,7 +298,13 @@ height: 100%;
   font-weight: 400;
   padding: 0px 40px 50px 40px;
   line-height: 120%;
+  
 }
+/* убрать подчеркивание */
+.text-decoration-none {
+  text-decoration: none;
+}
+
 /* ссылка «Посмотреть больше» */
 .lots_look-more-link {
 color: #000;
@@ -308,64 +313,140 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-padding-left: 40px;
+margin-left: 40px;
+text-underline-offset: 4px;
 }
 
 
 /* секция с информацией об аукционе */
 .about {
+display: grid;
+font-family: Raleway, sans-serif;
+color: #000;
 margin: 181px 50px 0px 50px;
 height: 487px;
+
+
+column-gap: 10px;
+ grid-template-columns: 1fr 2fr;
+/* первый столбик с лого занимает 1/3, второй столбик 2/3 */
 }
 
-/* класс для колонок */
-.about_column {
 
+/* класс для колонки с текстом */
+.about_column {
+display: grid;
+}
+
+.logo_column {
+  display: grid;
+  width: 430px;
+  justify-content: space-around;
+  
 }
 
 /* контейнер с логотипом */
 .about_logo {
-  /* display: block;
-  margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+  width: 240px;
+  height: 240px;
+  /* border: none; */
+  border-radius: 240px;
 }
 
 /* изображение логотипа */
 .about_logo-image {
-
   width: 148px;
   height: 114px;
-  /* width: 100%; */
 }
 
 /* заголовок секции */
 .about_title {
+display: grid;
+
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+
+padding-top: 100px;
+padding-bottom: 53px;
 
 }
 /* блок для текстов секции */
 .about_text {
+  display: flex;
+  align-items: flex-end;
+
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* подвал */
+.footer {
 
 }
 
 
 
+/* блок навигации по списку ссылок */
+.footer_menu {
+  
+}
 
 
 
+/* список пунктов меню */
+.footer_menu-list {
+
+}
 
 
+/* пункт списка меню */
+.footer_menu-list-item {
+
+}
 
 
+/* ссылка меню */
+.footer__menu-link {
+
+}
 
 
+/* активная ссылка меню */
+.footer_menu-link_active {
+
+}
 
 
+/* список ссылок на социальные сети */
+.footer_social-list {
+
+}
 
 
+/* пункт списка ссылок на социальные сети */
+.footer_social-list-item {
+
+}
 
 
+/* ссылка на социальные сети */
+.footer_social-link {
+
+}
 
 
-/* подвал */
-.footer {
+/* иконка социальной сети */
+.footer_social-icon {
 
 }
