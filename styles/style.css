@@ -215,7 +215,6 @@ address {
 
 /* список карточек */
 .lots_card-list {
-  display: block;
   display: flex;
   gap: 25px;
   padding-top: 27px;
