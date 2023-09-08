@@ -1,4 +1,10 @@
 /* место для вашего кода */
+/* плавный переход */
+html {
+  scroll-behavior: smooth;
+} 
+
+
 /* шапка */
 .header {
   display: flex;
@@ -10,7 +16,6 @@
 /* ! не забыть поставить в отдельные блоки фронт фамили и прочее, чтобы они могли работать "отдельно" */
 /* ! + пофиксить линии в хедере */
 /* ! + плавное перемещение, ссылки, убрать горизонтальный скролл (если будет) и тд */
-/* ! в about картинку добавить через <img> а не через класс*/
 /* контейнер навигации nav */
 .header_menu {
 /* display: flex; */
@@ -42,7 +47,9 @@
 }
 
 /* активная ссылка */
-.header_link_active {
+/* убирание подчеркивания */
+.header_link_active .header_link {
+  text-decoration: none;
 /* !!! сюда добавить ссылку или хз (или убирание подчеркивания)*/
 }
 
@@ -368,23 +375,22 @@ display: grid;
 /* заголовок секции */
 .about_title {
 display: grid;
-
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: uppercase;
+padding: 101px 0px 53px 2px;
 
-padding-top: 100px;
-padding-bottom: 53px;
+/* padding-left: 2px;
+padding-top: 101px;
+padding-bottom: 53px; */
 
 }
 /* блок для текстов секции */
 .about_text {
   display: flex;
   align-items: flex-end;
-
-
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -409,11 +415,6 @@ margin-top: 2px;
 
 }
 
-.www {
-display: grid;
-
-  /* padding-bottom: 10px; */
-}
 
 /* блок навигации по списку ссылок */
 .footer_menu {
