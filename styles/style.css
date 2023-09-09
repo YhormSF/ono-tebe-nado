@@ -126,8 +126,6 @@ address {
 
 /* классы для выравнивания строк текста и превращения их в блочный элемент */
 
-/* .test { letter-spacing: initial; } */
-
 .text-block {
   display: block;
 }
@@ -362,7 +360,9 @@ address {
 /* блок для текстов секции */
 .about_text {
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 46px;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -411,9 +411,7 @@ address {
 }
 
 /* ссылка меню */
-/* .footer_menu-link {
-
-} */
+/* .footer_menu-link {} */
 
 /* активная ссылка меню */
 /* вложенность для убирания подчеркивания активной страницы */
