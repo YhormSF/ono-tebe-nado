@@ -8,7 +8,6 @@ html {
 .header {
   display: flex;
   align-items: center;
-  height: 109px;
   margin: 92px 49px 92px 51px;
 }
 
@@ -86,7 +85,8 @@ address {
 }
 
 .address-margin-right {
-  margin-right: 108px;
+  text-align: left;
+  padding: 0px 0px 0px 0px;
 }
 
 /* входная секция (может и не нужен)*/
