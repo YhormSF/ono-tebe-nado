@@ -99,6 +99,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
 }
 
 /* полупрозраный блок */
@@ -194,8 +195,9 @@ address {
 
 /* секция с карточками лотов */
 .lots {
-  margin: 0px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
   font-family: Raleway, Arial, sans-serif;
+  /* max-width: 1440px; */
 }
 
 /* заголовок секции */
@@ -211,15 +213,21 @@ address {
 
 /* список карточек */
 .lots_card-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding-top: 27px;
-  padding-bottom: 30px;
-  color: #fff;
-  font-family: Raleway, Arial, sans-serif;
-  font-style: normal;
-  list-style: none;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+
+/* grid-template-columns: repeat(3, 1fr); */
+/* display: flex;
+flex-wrap: wrap; */
+
+gap: 25px;
+position: relative;
+padding-top: 27px;
+padding-bottom: 30px;
+color: #fff;
+font-family: Raleway, Arial, sans-serif;
+font-style: normal;
+list-style: none;
 }
 /* пункт списка карточки */
 .lots_card-list-item {
@@ -233,10 +241,11 @@ address {
 }
 /*  карточка */
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+display: grid;
+grid-template-columns: 1fr 2fr;
+position: relative;
+z-index: 1;
+
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -259,9 +268,12 @@ address {
 
 /* заголовок карточки */
 .card_title {
-  inset: 50px;
   z-index: 1;
-  display: block;
+
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
   padding: 50px 40px 0px 40px;
   font-weight: 700;
   font-size: 22px;
@@ -272,7 +284,12 @@ address {
 /* текст карточки */
 .card_text {
   z-index: 1;
-  display: block;
+
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  align-items: end;
   padding: 0px 40px 50px 40px;
   font-weight: 400;
   font-size: 20px;
@@ -281,7 +298,7 @@ address {
 
 /* ссылка «Посмотреть больше» */
 .lots_look-more-link {
-  margin-left: 40px;
+  padding-left: 40px;
   color: #000;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
@@ -369,7 +386,7 @@ address {
 }
 
 .footer_address-link {
-  max-width: 34%;
+  max-width: 31%;
 }
 
 /* блок навигации по списку ссылок */
