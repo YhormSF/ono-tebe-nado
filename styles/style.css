@@ -83,7 +83,7 @@ address {
 }
 
 .header_address-link {
-  max-width: 25%;
+  max-width: 26%;
 }
 
 /* входная секция (может и не нужен)*/
@@ -99,7 +99,6 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 /* полупрозраный блок */
@@ -195,9 +194,9 @@ address {
 
 /* секция с карточками лотов */
 .lots {
+  max-width: 1440px;
   padding: 0px 50px 0px 50px;
   font-family: Raleway, Arial, sans-serif;
-  /* max-width: 1440px; */
 }
 
 /* заголовок секции */
@@ -213,21 +212,16 @@ address {
 
 /* список карточек */
 .lots_card-list {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
-
-/* grid-template-columns: repeat(3, 1fr); */
-/* display: flex;
-flex-wrap: wrap; */
-
-gap: 25px;
-position: relative;
-padding-top: 27px;
-padding-bottom: 30px;
-color: #fff;
-font-family: Raleway, Arial, sans-serif;
-font-style: normal;
-list-style: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 27px;
+  padding-bottom: 30px;
+  color: #fff;
+  font-family: Raleway, Arial, sans-serif;
+  font-style: normal;
+  list-style: none;
 }
 /* пункт списка карточки */
 .lots_card-list-item {
@@ -241,10 +235,10 @@ list-style: none;
 }
 /*  карточка */
 .card {
-display: grid;
-grid-template-columns: 1fr 2fr;
-position: relative;
-z-index: 1;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 
   width: 100%;
   height: 100%;
