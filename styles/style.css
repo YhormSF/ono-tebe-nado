@@ -78,12 +78,9 @@ address {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: flex-start;
   align-content: flex-end;
   padding: 5px 3px 0px 0px;
-}
-
-.header_address-link {
-  max-width: 26%;
 }
 
 /* входная секция (может и не нужен)*/
@@ -292,7 +289,7 @@ address {
 
 /* ссылка «Посмотреть больше» */
 .lots_look-more-link {
-  padding-left: 40px;
+  margin-left: 40px;
   color: #000;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
@@ -376,11 +373,8 @@ address {
 
 .footer_address {
   display: grid;
+  justify-items: start;
   padding-top: 2px;
-}
-
-.footer_address-link {
-  max-width: 31%;
 }
 
 /* блок навигации по списку ссылок */
